@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="data.js"></script>
+    <script src="index.js" defer></script>
+
+    <title>ContentSlide</title>
+</head>
+
+<body id="body" class="text-center">
+    <h1 id="header">Content Slideshow</h1>
+    <div id="content-container">
+        <img alt="{description}" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/RandomBitmap.png">
+        <p>{description}</p>
+        <p>{number of likes} Likes</p>
+        <button type="button" class="btn btn-dark"> 👍 Like</button>
+        <button type="button" class="btn btn-dark">Show random picture</button>
+    </div>
+    <hr>
+    <h2>Edit Content</h2>
+    <form id="form">
+        <div class="form-group">
+            <label>Image URL</label>
+            <input type="text" class="form-control" placeholder="image URL">
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input type="text" class="form-control" placeholder="image URL">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Edits</button>
+    </form>
+    <hr>
+    <h2>Add Content</h2>
+    <form id="form">
+        <div class="form-group">
+            <label>Image URL</label>
+            <input type="text" class="form-control" placeholder="image URL">
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input type="text" class="form-control" placeholder="image URL">
+        </div>
+        <div class="form-group">
+            <label class="form-check-label"><input type="checkbox"> Create with 10 likes(0 otherwise)</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit New Content</button>
+    </form>
+</body>
+
+</html>
