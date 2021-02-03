@@ -1,4 +1,4 @@
-# JS Mini Challenge: Event Handling
+# JS Event Handling Practice
 
 ## Instructions
 
