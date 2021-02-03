@@ -18,7 +18,7 @@ To get feedback on your code, make a [pull request from your forked repo](https:
 
 ## Assignment
 
-In this challenge, we're going to be working on a site that allows our user to view random content. For the bored users out there! We're going to give our users the ability to:
+In this challenge, we're going to be working on a site that allows our user to view random content. For the bored users out there! We're going to be using data from an array of objects inside the `data.js` file. We're going to give our users the ability to:
 
 - View some intitial random content on page load
 - Click on the "show random picture" button to view random content from our `contentArray` array
