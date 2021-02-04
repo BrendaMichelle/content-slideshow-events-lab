@@ -37,7 +37,10 @@ There's a section in this Readme file for your notes on each deliverable. As you
 
 **YOUR NOTES**
 ```
-
+In global scope, define a variable currentImage to keep track of the currentImage - when the page first loads, the currentImage is an object full of null values
+Write a method renderImage to populate appropriate methods in the contentContainer according to whatever the currentImage is
+Write a method loadRandomImage that defines an array of possibleImages (exclusive of the currentImage, if there is one) and picks a random image from possibleImages using Math.random
+Finally, once a random image is chosen, call renderImage to update the DOM
 ```
 
 
@@ -47,7 +50,9 @@ There's a section in this Readme file for your notes on each deliverable. As you
 
 **YOUR NOTES**
 ```
-
+Because of the way loadRandomImage is defined, it can also be used to show a user a randomImage
+When the page initially loads, it will pick from all images in contentArray because possibleImages filters out the currentImage (i.e., does nothing when currentImage.id === null)
+After the page initially loads (i.e., when a user clicks the random image button), it will filter the currentImage out of the array of possibleImages - ensuring the user never sees the same image twice in a row
 ```
 
 ## Deliverable 3: "Like" button
@@ -60,7 +65,7 @@ There's a section in this Readme file for your notes on each deliverable. As you
 
 **YOUR NOTES**
 ```
-
+Increments currentImage.likes by one, then calls renderImage to update the updated currentImage's display in the DOM
 ```
 
 
@@ -73,7 +78,9 @@ The data won't persist (when you refresh the page, the new content won't be avai
 
 **YOUR NOTES**
 ```
-
+Prevent the default behavior of an addForm submission (i.e., reloading the page)
+Define id, photo, description and likes according to the user's input, then update currentImage with an object defined using shorthand and .push( currentImage ) onto contentArray so it shows up (possibly) when a user asks to see a random image
+Finally call renderImage to display the new currentImage on the DOM
 ```
 
 ## Deliverable 5: Edit Content
@@ -89,10 +96,7 @@ The data won't persist (when you refresh the page, the content won't have the up
 
 **YOUR NOTES**
 ```
-
+Prevent the default behavior of an editForm submission (i.e., reloading the page)
+pdate currentImage with values according to a user's entries in the editForm input fields
+Finally call renderImage to display the newly updated currentImage on the DOM
 ```
-
-
-
-
-
