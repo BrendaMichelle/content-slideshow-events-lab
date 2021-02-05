@@ -19,12 +19,12 @@
         <img alt="{description}" src="https://upload.wikimedia.org/wikipedia/commons/e/ec/RandomBitmap.png">
         <p>{description}</p>
         <p>{number of likes} Likes</p>
-        <button type="button" class="btn btn-dark"> 👍 Like</button>
-        <button type="button" class="btn btn-dark">Show random picture</button>
+        <button type="button" class="btn btn-dark" id = "like"> 👍 Like</button>
+        <button type="button" class="btn btn-dark" id = "showRandom">Show random picture</button>
     </div>
     <hr>
     <h2>Edit Content</h2>
-    <form id="form">
+    <form id="editForm">
         <div class="form-group">
             <label>Image URL</label>
             <input type="text" class="form-control" placeholder="image URL">
@@ -37,7 +37,7 @@
     </form>
     <hr>
     <h2>Add Content</h2>
-    <form id="form">
+    <form id="addForm">
         <div class="form-group">
             <label>Image URL</label>
             <input type="text" class="form-control" placeholder="image URL">
